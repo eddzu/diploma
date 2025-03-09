@@ -1,0 +1,633 @@
+{
+    "_id": "85bb0b7f-3b68-4a93-8e0c-c6f7325a8116",
+    "study_info": {
+        "study_title": "DiplomaTest",
+        "study_description": "Testing a db and work for a diploma",
+        "researcher_first": "Edita",
+        "researcher_last": "Dzubur",
+        "researcher_contact": "edita.dzubur2002@gmail.com"
+    },
+    "database": {
+        "database_host": "diplomskanaloga.mysql.database.azure.com",
+        "database_port": "3306",
+        "database_username": "AwareUser",
+        "database_password": "AwarePassword123",
+        "database_name": "diplomadb",
+        "rootUsername": "-",
+        "rootPassword": "-",
+        "config_without_password": false,
+        "require_ssl": false
+    },
+    "createdAt": "2025-03-02T13:48:36.545Z",
+    "updatedAt": "2025-03-09T08:21:06.099Z",
+    "questions": [
+        {
+            "esm_submit": "Submit",
+            "esm_title": "How are you feeling right now?",
+            "esm_type": 2,
+            "esm_radios": [
+                "Very positive (happy, motivated, relaxed)",
+                "Somewhat positive (content, okay, neutral)",
+                "Somewhat negative (stressed, worried, sad)",
+                "Very negative (anxious, upset, overwhelmed)"
+            ],
+            "id": 1,
+            "esm_notification_timeout": 600,
+            "esm_expiration_threshold": 0
+        },
+        {
+            "esm_submit": "Submit",
+            "esm_title": " Did the content you were exposed to match your current emotional state?",
+            "instructions": "Think about the text you just saw. Does it match your current emotional state?",
+            "esm_type": 2,
+            "esm_radios": [
+                "Yes, it strongly reflects how I feel",
+                "Somewhat, but not entirely",
+                "No, it is unrelated to my emotions",
+                "I’m not sure"
+            ],
+            "id": 2,
+            "esm_expiration_threshold": 0
+        },
+        {
+            "esm_submit": "Submit",
+            "esm_title": "In the past few hours, have you experienced any strong negative emotions?",
+            "instructions": " Think about your mood before this notification.",
+            "esm_type": 2,
+            "esm_radios": [
+                "Yes",
+                "No"
+            ],
+            "id": 3,
+            "esm_notification_timeout": 598,
+            "esm_expiration_threshold": 0
+        },
+        {
+            "esm_submit": "Submit",
+            "esm_title": "Do you feel like the text you saw on your screen influenced your mood?",
+            "instructions": "Think about what you have been reading. Did it make you feel better, worse, or no change?",
+            "esm_type": 2,
+            "esm_radios": [
+                "It made me feel better",
+                "It had no effect on my mood",
+                "It made me feel slightly worse",
+                "It made me feel significantly worse"
+            ],
+            "id": 4,
+            "esm_expiration_threshold": 598
+        },
+        {
+            "esm_submit": "Submit",
+            "esm_title": "How much do you agree with this statement? \"The content I just read contributed to my overall well-being.\"",
+            "esm_type": 4,
+            "esm_radios": [
+                "Strongly Agree",
+                " Agree",
+                "Neutral",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "esm_likert_max": 5,
+            "esm_likert_max_label": "Strongly agree",
+            "esm_likert_min_label": "Strongly disagree",
+            "id": 5,
+            "esm_notification_timeout": 599,
+            "esm_expiration_threshold": 0
+        },
+        {
+            "esm_submit": "Submit",
+            "esm_title": "How well did you sleep last night?",
+            "instructions": "Rate your sleep quality.",
+            "esm_type": 4,
+            "esm_likert_max": 5,
+            "esm_likert_min_label": "Very poorly",
+            "esm_likert_max_label": "Very well",
+            "id": 6,
+            "esm_expiration_threshold": 0
+        },
+        {
+            "esm_submit": "Submit",
+            "esm_title": "Do you feel mentally prepared for the day ahead?",
+            "instructions": "How confident or overwhelmed do you feel about today’s tasks and responsibilities?",
+            "esm_type": 4,
+            "esm_likert_max": 5,
+            "esm_likert_min_label": "Not at all",
+            "esm_likert_max_label": "Very much",
+            "id": 7,
+            "esm_expiration_threshold": 0
+        },
+        {
+            "esm_submit": "Submit",
+            "esm_title": "How has your mood changed since this morning?",
+            "instructions": "Compared to when you woke up, how do you feel now?",
+            "esm_type": 2,
+            "esm_radios": [
+                "I feel better",
+                "My mood is the same",
+                "I feel slightly worse",
+                "I feel significantly worse"
+            ],
+            "id": 8,
+            "esm_expiration_threshold": 0
+        },
+        {
+            "esm_submit": "Submit",
+            "esm_title": "Did any text on your screen today contribute to stress or anxiety?",
+            "instructions": "Think about whether the text made you feel overwhelmed or worried.",
+            "esm_type": 2,
+            "esm_radios": [
+                "Yes, significantly",
+                "Yes, slightly",
+                "No effect",
+                "No, it helped me feel better"
+            ],
+            "id": 9,
+            "esm_expiration_threshold": 0
+        },
+        {
+            "esm_submit": "Submit",
+            "esm_title": "How mentally demanding was the text you were exposed to today?",
+            "instructions": "Did it require a lot of effort to process?",
+            "esm_type": 4,
+            "esm_radios": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "esm_likert_max": 5,
+            "esm_likert_min_label": "Not at all",
+            "esm_likert_max_label": "Very much",
+            "id": 10,
+            "esm_expiration_threshold": 0
+        },
+        {
+            "esm_submit": "Submit",
+            "esm_title": "Reflecting on today, how was your overall mood?",
+            "instructions": "Looking back, how do you feel about today?",
+            "esm_type": 2,
+            "esm_radios": [
+                "Mostly positive",
+                "Neutral",
+                "Mostly negative"
+            ],
+            "id": 11,
+            "esm_expiration_threshold": 0
+        },
+        {
+            "esm_submit": "Submit",
+            "esm_title": "Would you like to see more or less of the type of content you were exposed to today?",
+            "instructions": "Was the content helpful or something you’d rather avoid?",
+            "esm_type": 2,
+            "esm_radios": [
+                "I want to see more of it",
+                "It was fine occasionally",
+                "I would prefer to see less",
+                "I would rather avoid it completely"
+            ],
+            "id": 12,
+            "esm_expiration_threshold": 0
+        }
+    ],
+    "schedules": [
+        {
+            "title": "Morning",
+            "type": "interval",
+            "questions": [
+                1,
+                6,
+                7
+            ],
+            "hours": [
+                10
+            ],
+            "days": [
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday",
+                "sunday"
+            ]
+        },
+        {
+            "title": "Afternoon",
+            "type": "interval",
+            "questions": [
+                2,
+                4,
+                8,
+                9
+            ],
+            "hours": [
+                16
+            ],
+            "days": [
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday",
+                "sunday"
+            ]
+        },
+        {
+            "title": "Evening",
+            "type": "interval",
+            "questions": [
+                9,
+                10,
+                11,
+                12
+            ],
+            "hours": [
+                20
+            ],
+            "days": [
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday",
+                "sunday"
+            ]
+        }
+    ],
+    "sensors": [
+        {
+            "setting": "webservice_wifi_only",
+            "value": true
+        },
+        {
+            "setting": "webservice_charging",
+            "value": true
+        },
+        {
+            "setting": "frequency_webservice",
+            "value": 360
+        },
+        {
+            "setting": "frequency_clean_old_data",
+            "value": "1"
+        },
+        {
+            "setting": "webservice_silent",
+            "value": true
+        },
+        {
+            "setting": "fallback_network",
+            "value": 5
+        },
+        {
+            "setting": "remind_to_charge",
+            "value": false
+        },
+        {
+            "setting": "foreground_priority",
+            "value": true
+        },
+        {
+            "setting": "debug_flag",
+            "value": false
+        },
+        {
+            "setting": "frequency_sync_config",
+            "value": 60
+        },
+        {
+            "setting": "enable_config_update",
+            "value": true
+        },
+        {
+            "setting": "status_applications",
+            "value": true
+        },
+        {
+            "setting": "status_notifications",
+            "value": false
+        },
+        {
+            "setting": "status_crashes",
+            "value": false
+        },
+        {
+            "setting": "frequency_applications",
+            "value": 30
+        },
+        {
+            "setting": "status_keyboard",
+            "value": false
+        },
+        {
+            "setting": "mask_notification",
+            "value": false
+        },
+        {
+            "setting": "mask_keyboard",
+            "value": false
+        },
+        {
+            "setting": "mask_touch_text",
+            "value": false
+        },
+        {
+            "setting": "status_screentext",
+            "value": true
+        },
+        {
+            "setting": "package_specification",
+            "value": "2"
+        },
+        {
+            "setting": "package_names",
+            "value": ""
+        },
+        {
+            "setting": "status_battery",
+            "value": false
+        },
+        {
+            "setting": "communication",
+            "value": false
+        },
+        {
+            "setting": "status_communication_events",
+            "value": false
+        },
+        {
+            "setting": "status_calls",
+            "value": false
+        },
+        {
+            "setting": "status_messages",
+            "value": false
+        },
+        {
+            "setting": "status_installations",
+            "value": false
+        },
+        {
+            "setting": "status_screen",
+            "value": false
+        },
+        {
+            "setting": "status_touch",
+            "value": false
+        },
+        {
+            "setting": "status_telephony",
+            "value": false
+        },
+        {
+            "setting": "status_timezone",
+            "value": false
+        },
+        {
+            "setting": "frequency_timezone",
+            "value": 20000
+        },
+        {
+            "setting": "status_accelerometer",
+            "value": false
+        },
+        {
+            "setting": "frequency_accelerometer",
+            "value": 20000
+        },
+        {
+            "setting": "threshold_accelerometer",
+            "value": 0
+        },
+        {
+            "setting": "frequency_accelerometer_enforce",
+            "value": false
+        },
+        {
+            "setting": "status_barometer",
+            "value": false
+        },
+        {
+            "setting": "frequency_barometer",
+            "value": 20000
+        },
+        {
+            "setting": "threshold_barometer",
+            "value": 0
+        },
+        {
+            "setting": "frequency_barometer_enforce",
+            "value": false
+        },
+        {
+            "setting": "status_bluetooth",
+            "value": false
+        },
+        {
+            "setting": "frequency_bluetooth",
+            "value": 60
+        },
+        {
+            "setting": "status_gravity",
+            "value": false
+        },
+        {
+            "setting": "frequency_gravity",
+            "value": 20000
+        },
+        {
+            "setting": "threshold_gravity",
+            "value": 0
+        },
+        {
+            "setting": "frequency_gravity_enforce",
+            "value": false
+        },
+        {
+            "setting": "status_gyroscope",
+            "value": false
+        },
+        {
+            "setting": "frequency_gyroscope",
+            "value": 20000
+        },
+        {
+            "setting": "threshold_gyroscope",
+            "value": 0
+        },
+        {
+            "setting": "frequency_gyroscope_enforce",
+            "value": false
+        },
+        {
+            "setting": "status_light",
+            "value": false
+        },
+        {
+            "setting": "frequency_light",
+            "value": 199999
+        },
+        {
+            "setting": "threshold_light",
+            "value": 0
+        },
+        {
+            "setting": "frequency_light_enforce",
+            "value": false
+        },
+        {
+            "setting": "status_linear_accelerometer",
+            "value": false
+        },
+        {
+            "setting": "frequency_linear_accelerometer",
+            "value": 20000
+        },
+        {
+            "setting": "threshold_linear_accelerometer",
+            "value": 0
+        },
+        {
+            "setting": "frequency_linear_accelerometer_enforce",
+            "value": false
+        },
+        {
+            "setting": "location",
+            "value": false
+        },
+        {
+            "setting": "status_location_gps",
+            "value": false
+        },
+        {
+            "setting": "status_location_network",
+            "value": false
+        },
+        {
+            "setting": "frequency_gps",
+            "value": 180
+        },
+        {
+            "setting": "frequency_network",
+            "value": 300
+        },
+        {
+            "setting": "min_location_gps_accuracy",
+            "value": 150
+        },
+        {
+            "setting": "min_location_network_accuracy",
+            "value": 1500
+        },
+        {
+            "setting": "location_expiration_time",
+            "value": 300
+        },
+        {
+            "setting": "status_location_passive",
+            "value": false
+        },
+        {
+            "setting": "location_save_all",
+            "value": false
+        },
+        {
+            "setting": "status_magnetometer",
+            "value": false
+        },
+        {
+            "setting": "frequency_magnetometer",
+            "value": 20000
+        },
+        {
+            "setting": "threshold_magnetometer",
+            "value": 0
+        },
+        {
+            "setting": "frequency_magnetometer_enforce",
+            "value": false
+        },
+        {
+            "setting": "network",
+            "value": false
+        },
+        {
+            "setting": "status_network_events",
+            "value": false
+        },
+        {
+            "setting": "status_network_traffic",
+            "value": false
+        },
+        {
+            "setting": "status_processor",
+            "value": false
+        },
+        {
+            "setting": "status_proximity",
+            "value": false
+        },
+        {
+            "setting": "frequency_proximity",
+            "value": 20000
+        },
+        {
+            "setting": "threshold_proximity",
+            "value": 0
+        },
+        {
+            "setting": "frequency_proximity_enforce",
+            "value": false
+        },
+        {
+            "setting": "status_rotation",
+            "value": false
+        },
+        {
+            "setting": "frequency_rotation",
+            "value": 20000
+        },
+        {
+            "setting": "threshold_rotation",
+            "value": 0
+        },
+        {
+            "setting": "frequency_rotation_enforce",
+            "value": false
+        },
+        {
+            "setting": "status_temperature",
+            "value": false
+        },
+        {
+            "setting": "frequency_temperature",
+            "value": 20000
+        },
+        {
+            "setting": "threshold_temperature",
+            "value": 0
+        },
+        {
+            "setting": "frequency_temperature_enforce",
+            "value": false
+        },
+        {
+            "setting": "status_wifi",
+            "value": false
+        },
+        {
+            "setting": "frequency_wifi",
+            "value": 60
+        },
+        {
+            "setting": "status_esm",
+            "value": true
+        },
+        {
+            "setting": "status_webservice",
+            "value": true
+        }
+    ]
+}
